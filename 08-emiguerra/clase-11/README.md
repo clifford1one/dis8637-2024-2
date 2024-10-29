@@ -32,19 +32,15 @@ Se le presenta al usuario una lista de candidatos, pero la interfaz está diseñ
 ## Flujo de interacción
 
 ### Flujo con Ciclos de Error Progresivo
+
 1. Entrada a la Habitación: El usuario llega a la habitación y ve un sistema de votación digital listo para usar.
-2. Instrucciones Iniciales: La pantalla muestra una breve introducción sobre la importancia de la votación y cómo proceder.
-3. Presentación de la Lista de Candidatos: Aparecen los candidatos, con el candidato preferido resaltado sutilmente (mediante color o posición).
-4. Selección de Candidato: El usuario elige un candidato.
-5. Validación de Candidato:
+2. La pantalla en estado de "StandBy" muestra a los 4 candidatos, junto a su nombre y código.
+3. El usuario toma el control, al detectar movimiento, la pantalla se activa.
+4. Se muestra una de las interfaces de votación
+5. Selección de Candidato: El usuario elige un candidato.
+6. Mensaje de confirmación: "Gracias por ejercer tu voto! Vuelve más tarde para la coronación del emperador" (7s)
+7. Se muestra la pantalla en "StandBy".
 
-*Si selecciona el candidato preferido:* Se muestra un mensaje de confirmación, y el usuario procede a completar su voto exitosamente.
-
-*Si selecciona otro candidato:* Aparece un mensaje de error indicando que ocurrió un problema y se debe intentar de nuevo.
-
-6. Carga de Nueva Interfaz (Mayor Dificultad): La interfaz se recarga, mostrando una lista de candidatos con un diseño menos intuitivo (botones menos visibles, opciones desordenadas).
-7. Segundo Intento de Selección de Candidato: El usuario intenta votar de nuevo, encontrando la interfaz más confusa.
-8. Nueva Validación de Candidato:
 
 *Si selecciona el candidato preferido:* El sistema acepta el voto.
 
